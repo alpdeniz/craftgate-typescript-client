@@ -9,7 +9,7 @@ test('installment() should return the installment adapter', t => {
     baseUrl: 'http://localhost:8000'
   };
 
-  const craftgate = new Craftgate.Client(options);
+  const craftgate = new Craftgate.default.Client(options);
   const installmentAdapter = craftgate.installment();
 
   t.truthy(installmentAdapter);
@@ -23,7 +23,7 @@ test('onboarding() should return the onboarding adapter', t => {
     baseUrl: 'http://localhost:8000'
   };
 
-  const craftgate = new Craftgate.Client(options);
+  const craftgate = new Craftgate.default.Client(options);
   const onboardingAdapter = craftgate.onboarding();
 
   t.truthy(onboardingAdapter);
@@ -37,7 +37,7 @@ test('payment() should return the payment adapter', t => {
     baseUrl: 'http://localhost:8000'
   };
 
-  const craftgate = new Craftgate.Client(options);
+  const craftgate = new Craftgate.default.Client(options);
   const paymentAdapter = craftgate.payment();
 
   t.truthy(paymentAdapter);
